@@ -25,7 +25,7 @@ This experience is *not in any way* about becoming an expert JavaScript programm
 
 ### Specifically
 
-Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give. 
+Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give.
 
 **To complete and submit this assignment, you should:**
 
@@ -46,7 +46,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * In answering questions, assume all of the questions include a *explain briefly* note -- you do NOT have to, and should not, write extended paragraphs. Be as concise as you can and explain in your own words. Don't worry about "whether it's enough" -- just worry about conveying your understanding so you can read it later, or even give it to someone else, and the answers will help/make sense.
 
-* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours. 
+* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours.
 
 * **For grading:** we are grading on...
 	* Following the instructions
@@ -57,13 +57,8 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
-* **Jackie Cohen (jczetta)**
-* Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+
+* **Tasha Torchon (torchont)**
 
 ## Questions & code instructions
 
@@ -79,25 +74,56 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
+"//" must come before a comment. //This is a comment in JavaScript.
+
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+
+`
+<script type="text/javascript">
+`
+needs to be added near the top of the code. Here, it's on line 7.
+
+		Will response above display correctly.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
+`console.log()` is similar to print in that it facilitates the debugging process. The information in the parentheses after `console.log` shows up in a console, not the web browser. It allows the programmer to test the program discreetly. `innerHTML` is similar to print in that it displays the content or value of an element. For instance if the value of "greeting" is "Welcome back!", applying `innerHTML` to "greeting" will display "Welcome back!" in the web browser. `innerHTML` might be used in way similar to printing a variable in Python. For instance, one could change the display message by changing the element content instead of changing the element name that innerHTML refers to.
+
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
+
+I would have to comment out alert("hello").
+
+		How to edit to 1) create new text box styles without affecting bottom. 2) allow current date/ time to display below.
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
+Replace `A name` in `document.querySelector('h1').innerHTML = "A name"` on line 16 with my name (i.e. Tasha).
+
 * **What does the word `document` represent in this code? Explain briefly.**
 
-* **What is happening in line 12 ( 
+`document` represents a document object that contains the contents of the webpage.
+
+https://www.tutorialspoint.com/javascript/javascript_html_dom.htm
+
+* **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
+Here, the code is grouping the listed items into an array and finding the length of the array. The listed items include those that are counted (e.g. the fruits near the top of the page) and those that are bulleted (e.g. the University names near the bottom).
+
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
+
+It would be white.
+
+Verify.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
+The paragraph style has been defined as having a gray box with a white border. Every time the `<p>` tag is used, the text is displayed in such a box.
+
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
+
+I changed the name of the function `copyFunction` to `copyFunctionMich` and created a new, similar function `copyFunctionMcGill`. Since `copyFunction`, when invoked, performed an action similar to the one I wanted, I used it as a starting point. I had initially tried to combine both processes for displaying a message after copying `University of Michigan` and `McGill University` under the same function. When this proved unsuccessful, I created a new function instead.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -112,7 +138,7 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
-
+The `handleClick` function displays a pop up box when invoked. The second line of code creates a `Wow` button that invokes the `handleClick` function when clicked.
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
 

@@ -150,11 +150,23 @@ The `handleClick` function displays a pop up box when invoked. The second line o
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+The style, as defined in lines 7-14, is such that the error message `Not valid!` is displayed in red and the response for valid inputs `Nice!` is displayed in blue.
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+`var regex` refers to regular expressions, which indicate what characters can be a valid string input. `/^[a-zA-Z]+$/` indicates that the word can only include lowercase letters (a-z) and uppercase letters(A-Z). The caret at the beginning indicates that the word must start with a letter; the dollar sign at the end means that nothing can come after the string (i.e there can only be one string made up of letters).
+https://www.sitepoint.com/expressions-javascript/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+The syntax in JavaScript uses parentheses and curly brackets instead of colons.
+
+					What else
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
+It refers to how long the message will display on the screen before fading away.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -163,6 +175,10 @@ $(document).ready(function(){
     $("form").submit(function(event){
 ```
 
+This code makes it so that the if statement is executed only after some input has been submitted by the user.
+
+https://www.w3schools.com/jquery/event_ready.asp
+https://www.w3schools.com/jquery/event_submit.asp
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.

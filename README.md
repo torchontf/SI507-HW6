@@ -74,26 +74,24 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
-"//" must come before a comment. //This is a comment in JavaScript.
+`//` must come before a comment. `//This is a comment in JavaScript.``
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
-`
-<script type="text/javascript">
-`
-needs to be added near the top of the code. Here, it's on line 7.
 
-		Will response above display correctly.
+`<script type="text/javascript">` needs to be added near the top of the code. Here, it's on line 7.
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
-`console.log()` is similar to print in that it facilitates the debugging process. The information in the parentheses after `console.log` shows up in a console, not the web browser. It allows the programmer to test the program discreetly. `innerHTML` is similar to print in that it displays the content or value of an element. For instance if the value of "greeting" is "Welcome back!", applying `innerHTML` to "greeting" will display "Welcome back!" in the web browser. `innerHTML` might be used in way similar to printing a variable in Python. For instance, one could change the display message by changing the element content instead of changing the element name that innerHTML refers to.
+`console.log()` is similar to print in that it facilitates the debugging process. The information in the parentheses after `console.log` shows up in a console, not the web browser. It allows the programmer to test the program discreetly. `innerHTML` is similar to print in that it can display the content or value of an element. For instance if the value of "greeting" is "Welcome back!", applying `innerHTML` to "greeting" will display "Welcome back!" in the web browser. `innerHTML` might be used in way similar to printing a variable in Python. For instance, one could change the display message by changing the element content instead of changing the element name that innerHTML refers to.
+
+References:
+<https://www.w3schools.com/jsref/met_console_log.asp>
+<https://www.w3schools.com/jsref/prop_html_innerhtml.asp>
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
 I would have to comment out alert("hello").
-
-		How to edit to 1) create new text box styles without affecting bottom. 2) allow current date/ time to display below.
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
@@ -103,19 +101,18 @@ Replace `A name` in `document.querySelector('h1').innerHTML = "A name"` on line 
 
 `document` represents a document object that contains the contents of the webpage.
 
-https://www.tutorialspoint.com/javascript/javascript_html_dom.htm
+Reference:
+<https://www.tutorialspoint.com/javascript/javascript_html_dom.htm>
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-Here, the code is grouping the listed items into an array and finding the length of the array. The listed items include those that are counted (e.g. the fruits near the top of the page) and those that are bulleted (e.g. the University names near the bottom).
+Here, the code is grouping the listed items into an array and finding the length of the array. The listed items include those that are ordered/numbered (e.g. the fruits near the top of the page) and those that are unordered/bulleted (e.g. the University names near the bottom).
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
 It would be white.
-
-Verify.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
@@ -123,7 +120,7 @@ The paragraph style has been defined as having a gray box with a white border. E
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
-I changed the name of the function `copyFunction` to `copyFunctionMich` and created a new, similar function `copyFunctionMcGill`. Since `copyFunction`, when invoked, performed an action similar to the one I wanted, I used it as a starting point. I had initially tried to combine both processes for displaying a message after copying `University of Michigan` and `McGill University` under the same function. When this proved unsuccessful, I created a new function instead.
+I changed the name of the function `copyFunction` to `copyFunctionMich` and created a new, similar function `copyFunctionMcGill`. Since `copyFunction`, when invoked, performed an action similar to the one I wanted, I used it as a starting point. I had initially tried to combine both processes for displaying a message after highlthing and copying `University of Michigan` and `McGill University` under the same function. When this proved unsuccessful, I created a new function instead.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
@@ -154,15 +151,15 @@ The style, as defined in lines 7-14, is such that the error message `Not valid!`
 
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
 
-`var regex` refers to regular expressions, which indicate what characters can be a valid string input. `/^[a-zA-Z]+$/` indicates that the word can only include lowercase letters (a-z) and uppercase letters(A-Z). The caret at the beginning indicates that the word must start with a letter; the dollar sign at the end means that nothing can come after the string (i.e there can only be one string made up of letters).
-https://www.sitepoint.com/expressions-javascript/
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+`var regex` refers to regular expressions, which indicate what pattern a certain string should follow. Here, it is used to refer to the input given by the user. `/^[a-zA-Z]+$/` indicates that the word can only include lowercase letters (a-z) and uppercase letters(A-Z). The caret at the beginning indicates that the word must start with a letter; the dollar sign at the end means that nothing can come after the string. In short, `/^[a-zA-Z]+$/` means valid input is one string made up of letters.
+
+References:
+<https://www.sitepoint.com/expressions-javascript/>
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions>
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
-The syntax in JavaScript uses parentheses and curly brackets instead of colons.
-
-					What else
+In JavaScript, the statement to be evaluated is in parentheses and the action to be executed is in curly brackets. In Python the statement to be evaluated is not enclosed in parentheses but is followed by a colon. The action to be executed is indented.
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 
@@ -177,8 +174,9 @@ $(document).ready(function(){
 
 This code makes it so that the if statement is executed only after some input has been submitted by the user.
 
-https://www.w3schools.com/jquery/event_ready.asp
-https://www.w3schools.com/jquery/event_submit.asp
+References:
+<https://www.w3schools.com/jquery/event_ready.asp>
+<https://www.w3schools.com/jquery/event_submit.asp>
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.

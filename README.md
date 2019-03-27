@@ -74,7 +74,7 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
-`//` must come before a comment. `//This is a comment in JavaScript.``
+`//` must come before a comment. `//This is a comment in JavaScript.`
 
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
 
@@ -85,13 +85,13 @@ Some JavaScript code
 
 `console.log()` is similar to print in that it facilitates the debugging process. The information in the parentheses after `console.log` shows up in a console, not the web browser. It allows the programmer to test the program discreetly. `innerHTML` is similar to print in that it can display the content or value of an element. For instance if the value of "greeting" is "Welcome back!", applying `innerHTML` to "greeting" will display "Welcome back!" in the web browser. `innerHTML` might be used in way similar to printing a variable in Python. For instance, one could change the display message by changing the element content instead of changing the element name that innerHTML refers to.
 
-References:
-<https://www.w3schools.com/jsref/met_console_log.asp>
-<https://www.w3schools.com/jsref/prop_html_innerhtml.asp>
+References:   
+<https://www.w3schools.com/jsref/met_console_log.asp>   
+<https://www.w3schools.com/jsref/prop_html_innerhtml.asp>   
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
-I would have to comment out alert("hello").
+I would have to comment out alert("hello") on line 12.
 
 * **How can you put your own name at the top where it currently says "A name"? Explain very briefly how to do so, and replace `A name` in the web page with your own name.**
 
@@ -101,8 +101,8 @@ Replace `A name` in `document.querySelector('h1').innerHTML = "A name"` on line 
 
 `document` represents a document object that contains the contents of the webpage.
 
-Reference:
-<https://www.tutorialspoint.com/javascript/javascript_html_dom.htm>
+Reference:   
+<https://www.tutorialspoint.com/javascript/javascript_html_dom.htm>   
 
 * **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
@@ -153,9 +153,9 @@ The style, as defined in lines 7-14, is such that the error message `Not valid!`
 
 `var regex` refers to regular expressions, which indicate what pattern a certain string should follow. Here, it is used to refer to the input given by the user. `/^[a-zA-Z]+$/` indicates that the word can only include lowercase letters (a-z) and uppercase letters(A-Z). The caret at the beginning indicates that the word must start with a letter; the dollar sign at the end means that nothing can come after the string. In short, `/^[a-zA-Z]+$/` means valid input is one string made up of letters.
 
-References:
-<https://www.sitepoint.com/expressions-javascript/>
-<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions>
+References:   
+<https://www.sitepoint.com/expressions-javascript/>    
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions>   
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
@@ -163,7 +163,7 @@ In JavaScript, the statement to be evaluated is in parentheses and the action to
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
 
-It refers to how long the message will display on the screen before fading away.
+It refers to how long the message will display on the screen before fading away. Here, it will take 1,000 milliseconds.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -174,9 +174,9 @@ $(document).ready(function(){
 
 This code makes it so that the if statement is executed only after some input has been submitted by the user.
 
-References:
-<https://www.w3schools.com/jquery/event_ready.asp>
-<https://www.w3schools.com/jquery/event_submit.asp>
+References:   
+<https://www.w3schools.com/jquery/event_ready.asp>   
+<https://www.w3schools.com/jquery/event_submit.asp>   
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.

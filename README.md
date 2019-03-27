@@ -83,7 +83,7 @@ Some JavaScript code
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
-`console.log()` is similar to print in that it facilitates the debugging process. The information in the parentheses after `console.log` shows up in a console, not the web browser. It allows the programmer to test the program discreetly. `innerHTML` is similar to print in that it can display the content or value of an element. For instance if the value of "greeting" is "Welcome back!", applying `innerHTML` to "greeting" will display "Welcome back!" in the web browser. `innerHTML` might be used in way similar to printing a variable in Python. For instance, one could change the display message by changing the element content instead of changing the element name that innerHTML refers to.
+`console.log()` is similar to print in that it facilitates the debugging process. The information in the parentheses after `console.log` shows up in a console, not the web browser. It allows the programmer to test the program discreetly. `innerHTML` is similar to print in that it can display the content or value of an element. For instance if the value of "greeting" is "Welcome back!", applying `innerHTML` to "greeting" will display "Welcome back!" in the web browser. `innerHTML` might be used in way similar to printing a variable in Python. For instance, one could change the display message by changing the element content instead of changing the element name that innerHTML refers to. innerHTML is different from print in that it can also be used to change what is displayed.
 
 References:   
 <https://www.w3schools.com/jsref/met_console_log.asp>   
